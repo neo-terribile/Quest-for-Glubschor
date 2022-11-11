@@ -1,0 +1,140 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "tilemaps/world1/world1.tmx",
+    "expandedProjectPaths": [
+        ".",
+        "tilesets",
+        "tilemaps/world1",
+        "tilemaps/hometown",
+        "tilemaps"
+    ],
+    "fileStates": {
+        "blocks.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilemaps/hometown.tmx": {
+            "scale": 0.5264583333333334,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 957.3407202216066,
+                "y": 387.4950534230313
+            }
+        },
+        "tilemaps/hometown/hometown.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 1060.6060606060605,
+                "y": 878.7878787878788
+            }
+        },
+        "tilemaps/tilesets/blocks.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "tilemaps/tilesets/details.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "tilemaps/tilesets/entities.tsx": {
+            "scaleInDock": 1
+        },
+        "tilemaps/tilesets/grass.tsx": {
+            "scaleInDock": 1
+        },
+        "tilemaps/tilesets/ground.tsx": {
+            "scaleInDock": 1
+        },
+        "tilemaps/tilesets/objects.tsx": {
+            "scaleInDock": 1
+        },
+        "tilemaps/welt1.tmx": {
+            "scale": 0.16624999999999998,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1924.8120300751882,
+                "y": 2562.406015037594
+            }
+        },
+        "tilemaps/world1/welt1.tmx": {
+            "scale": 0.125,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 1920,
+                "y": 2560
+            }
+        },
+        "tilemaps/world1/world1.tmx": {
+            "scale": 0.25,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 2052,
+                "y": 3332
+            }
+        },
+        "tilesets/blocks.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.33,
+            "scaleInEditor": 1
+        },
+        "tilesets/details.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.33,
+            "scaleInEditor": 1
+        },
+        "tilesets/entities.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.33,
+            "scaleInEditor": 1
+        },
+        "tilesets/grass.tsx": {
+            "scaleInDock": 0.33,
+            "scaleInEditor": 1
+        },
+        "tilesets/ground.tsx": {
+            "scaleInDock": 0.5,
+            "scaleInEditor": 0.33
+        },
+        "tilesets/objects.tsx": {
+            "scaleInDock": 0.33,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "C:/Users/Neo/source/repos/neo-terribile/My_little_adventure/tiled/tilemaps/hometown",
+    "last.externalTilesetPath": "C:/Users/Neo/source/repos/neo-terribile/Adventure/tiled/tilesets",
+    "last.imagePath": "C:/Users/Neo/source/repos/neo-terribile/Adventure/aseprite/png",
+    "map.height": 80,
+    "map.lastUsedExportFilter": "CSV-Dateien (*.csv)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 64,
+    "map.tileWidth": 64,
+    "map.width": 60,
+    "openFiles": [
+        "tilemaps/hometown/hometown.tmx",
+        "tilemaps/world1/world1.tmx"
+    ],
+    "project": "adventure.tiled-project",
+    "recentFiles": [
+        "tilemaps/hometown/hometown.tmx",
+        "tilemaps/world1/world1.tmx",
+        "tilesets/ground.tsx",
+        "tilesets/blocks.tsx",
+        "tilesets/details.tsx",
+        "tilesets/entities.tsx",
+        "tilemaps/world1/welt1.tmx",
+        "tilemaps/welt1.tmx",
+        "tilesets/objects.tsx",
+        "tilesets/grass.tsx",
+        "blocks.tsx"
+    ],
+    "resizeMap.removeObjects": false,
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 64,
+        "width": 64
+    }
+}
