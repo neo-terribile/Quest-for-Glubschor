@@ -6,9 +6,7 @@ from game import Game
 
 class StateMachine:
     def __init__(self):
-        #self.__dict__.update(settings)
         self.done = False
-        self.screen = pg.display.set_mode(RESOLUTION)
         self.clock = pg.time.Clock()
 
     def setup_states(self, state_dict, start_state):
@@ -29,7 +27,7 @@ class StateMachine:
             self.done = True
         elif self.state.done:
             self.flip_state()
-        self.state.update(self.screen, dt)
+        self.state.update(SCREEN, dt)
 
     def event_loop(self):
         for event in pg.event.get():

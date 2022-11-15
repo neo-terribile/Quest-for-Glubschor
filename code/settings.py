@@ -3,14 +3,17 @@ from ctypes.wintypes import RGB
 import pygame as pg
 
 CAPTION = "Quest for Glubschor"
-WIDTH    = 1920	
-HEIGHT   = 1080
+#WIDTH    = 1920	
+#HEIGHT   = 1080
+WIDTH    = 1600	
+HEIGHT   = 900
 RESOLUTION = (WIDTH, HEIGHT)
 FPS      = 60
 TILESIZE = 64
 
 pg.init()
 
+pg.display.set_caption(CAPTION)
 SCREEN = pg.display.set_mode(RESOLUTION)
 SCREEN_RECT = SCREEN.get_rect()
 
@@ -18,14 +21,13 @@ SCREEN_RECT = SCREEN.get_rect()
 ss_ui = 'graphics/player/ui.png'
 ss_player = 'graphics/player/player.png'
 
-
 # ui 
 BAR_HEIGHT = TILESIZE / 2 - 8
 BAR_WIDTH = TILESIZE * 4 - 6
 ITEM_BOX_SIZE = 80
 UI_FONT = 'graphics/font/joystix.ttf'
+FONT = 'graphics/font/Pixel.ttf'
 UI_FONT_SIZE = 18
-
 
 # general colors
 WATER_COLOR = '#71ddee'
@@ -40,7 +42,6 @@ green = RGB(0,255,0)
 HEALTH_COLOR = 'red'
 ENERGY_COLOR = 'blue'
 UI_BORDER_COLOR_ACTIVE = 'gold'
-
 
 # weapons 
 weapon_data = {

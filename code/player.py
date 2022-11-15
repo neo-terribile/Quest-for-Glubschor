@@ -9,7 +9,7 @@ class Player(Entity):
 		self.image = get_sprite(0,0,TILESIZE,TILESIZE*2,ss_player)
 		self.rect = self.image.get_rect(topleft = pos)
 		self.mask = pg.mask.from_surface(self.image)
-		self.hitbox = self.rect.inflate(-24,-96)
+		self.hitbox = self.rect.inflate(-22,-96)
 			
 		# graphics setup
 		self.import_player_assets()

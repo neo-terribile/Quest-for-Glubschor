@@ -85,6 +85,25 @@ class YSortCameraGroup(pg.sprite.Group):
 		for enemy in enemy_sprites:
 			enemy.enemy_update(player)
 
+class Text():
+	def __init__(self,screen,pos,text,font,size,clr):
+		self.font = pg.font.Font(font, size)
+		msg = self.font.render(text, True, clr)
+		msg_rect = msg.get_rect(center=(pos[0],pos[1]))
+		screen.blit(msg,msg_rect)
+class Button():
+	def __init__(self,screen,pos):
+		self.image = get_sprite(0,TILESIZE*1.5,TILESIZE*4,TILESIZE,ss_ui)
+		self.rect = self.image.get_rect(center=(pos[0]+TILESIZE*2,pos[1]+TILESIZE*0.5))
+		self.draw(screen,pos)
+
+	def draw(self,screen,pos):
+		screen.blit(self.image,pos)
+		Text(screen,self.rect.center,'New Game',FONT,32,black)
+	
+	def selected():
+		pass
+
 class Tile(pg.sprite.Sprite):
 	def __init__(self,pos,groups,sprite_type,surface = pg.Surface((TILESIZE,TILESIZE))):
 		super().__init__(groups)
