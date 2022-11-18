@@ -7,11 +7,17 @@
   - Class Scroller (for intro and lvls)
   - Class Button
   - Class MenuManager
-  - Class Dialog 
+  - Class Dialog
+  - Class NPC (basic class)
+    - Smith
+    - Salesman
+    - Alchemist
+    - Villagers
   - Save / Load Funktion 
   - Costumizable characters
 
 # Grafics
+  - Every Picure single for databank
 
 # Story
   - Dawn of the world (-> create new word)
@@ -30,7 +36,7 @@
     - Sea
     - Mountain
     
-    
+  - Bliss of Glubschor    
   - 14 Monokel (13 + 1)
   - Monster cause Glubschor disappered
     
