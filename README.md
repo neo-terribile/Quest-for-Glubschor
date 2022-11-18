@@ -1,5 +1,7 @@
 # Quest-for-Glubschor
 
+
+
 # Programmming
   - Rework folderstructure
   - Class Scroller (for intro and lvls)
