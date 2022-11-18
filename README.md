@@ -7,6 +7,7 @@
   - Class Scroller (for intro and lvls)
   - Class Button
   - Class MenuManager
+  - Class Dialog 
   - Save / Load Funktion 
   - Costumizable characters
 
