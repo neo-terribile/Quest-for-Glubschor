@@ -24,10 +24,10 @@
     - Houses
     
  - New areas with progress
-  - Dungeon
-  - Forrest
-  - Sea
-  - Mountain
+    - Dungens
+    - Forrest
+    - Sea
+    - Mountain
     
     
   - 14 Monokel (13 + 1)
