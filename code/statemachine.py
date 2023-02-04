@@ -44,12 +44,15 @@ class StateMachine:
 
 app = StateMachine()
 state_dict = {
-    'intro': Intro(),
+    'titlescreen': Titlescreen(),
     'menu': Menu(),
+    'options': Options(),
+    'quit': Quit(),
+    'intro': Intro(),
     'game': Game()}
 
 class QfG:
-    app.setup_states(state_dict, 'intro')
+    app.setup_states(state_dict, 'titlescreen')
     app.main_game_loop()
     pg.quit()
     sys.exit()

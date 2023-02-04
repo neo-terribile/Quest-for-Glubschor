@@ -50,6 +50,7 @@ class States(object):
         self.next = None
         self.quit = False
         self.previous = None
+        self.screen_rect = SCREEN_RECT
 
 class YSortCameraGroup(pg.sprite.Group):
 	def __init__(self):
@@ -92,17 +93,36 @@ class Text():
 		msg_rect = msg.get_rect(center=(pos[0],pos[1]))
 		screen.blit(msg,msg_rect)
 class Button():
-	def __init__(self,screen,pos):
-		self.image = get_sprite(0,TILESIZE*1.5,TILESIZE*4,TILESIZE,ss_ui)
+	def __init__(self,screen,pos,text):
+		image_des = get_sprite(0,TILESIZE*2.5,TILESIZE*4,TILESIZE,ss_ui)
+		self.pressed = False
+		self.image = image_des
 		self.rect = self.image.get_rect(center=(pos[0]+TILESIZE*2,pos[1]+TILESIZE*0.5))
+		self.mask = pg.mask.from_surface(self.image)
+		self.text = text
+		self.button_state()
 		self.draw(screen,pos)
 
 	def draw(self,screen,pos):
 		screen.blit(self.image,pos)
-		Text(screen,self.rect.center,'New Game',FONT,32,black)
+		Text(screen,self.rect.center,self.text,FONT,26,black)
 	
-	def selected():
-		pass
+	def button_state(self):
+		mouse_pos = pg.mouse.get_pos()
+		image_sel = get_sprite(0,TILESIZE*1.5,TILESIZE*4,TILESIZE,ss_ui)
+		image_click = get_sprite(0,TILESIZE*3.5,TILESIZE*4,TILESIZE,ss_ui)
+		image_des = get_sprite(0,TILESIZE*2.5,TILESIZE*4,TILESIZE,ss_ui)
+		if self.rect.collidepoint(mouse_pos):
+			self.image = image_sel
+			if pg.mouse.get_pressed()[0]:
+				self.pressed = True
+			else:
+				if self.pressed == True:
+					print('click')
+					self.image = image_click
+					self.pressed = False
+		else:
+			self.image = image_des
 
 class Tile(pg.sprite.Sprite):
 	def __init__(self,pos,groups,sprite_type,surface = pg.Surface((TILESIZE,TILESIZE))):
@@ -118,7 +138,6 @@ class Tile(pg.sprite.Sprite):
 		else:
 			self.rect = self.image.get_rect(topleft = pos)
 			self.hitbox = self.rect.inflate(0,-10)
-
 class Entity(pg.sprite.Sprite):
 	def __init__(self,groups):
 		super().__init__(groups)
